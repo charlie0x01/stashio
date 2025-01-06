@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #171717;
+  --white: #ffffff;
+  --secondary: #ff8132;
+  --blue: #7ca1ff;
+  --pink: #ff7da0;
+  --purple: #9878dd;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--primary);
+  background: var(--white);
+}
