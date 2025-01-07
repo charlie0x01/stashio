@@ -1,6 +1,9 @@
 import express, { Application, NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
+import multer from 'multer';
+
+const upload = multer({ dest: '/uploads' });
 
 // middlewares
 import globalErrorHandler from './middleware/globleErrorHandler.middleware';
@@ -26,8 +29,9 @@ export default (): Application => {
 
   // v1 routes
   app.use('/v1/api', v1Router);
-  app.get('/v1/api', (req, res) => {
-    res.send('working');
+  app.post('/upload', upload.single('file'), (req, res) => {
+    console.log(req?.file);
+    res.send('file recieved');
   });
 
   // path not found
