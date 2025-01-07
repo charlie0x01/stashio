@@ -14,7 +14,7 @@ Stashio is a minimalist Google Drive clone focused on simplicity, speed, and eas
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/stashio.git
+   git clone https://github.com/charlie0x01/stashio.git
    cd stashio
 2. Install dependencies:
     ```bash
